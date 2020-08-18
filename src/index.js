@@ -1,14 +1,22 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import Theme from './styles/theme';
+import {useColorScheme} from 'react-native';
+import Themes from './styles/theme';
 
 // Screens
 import Chat from './pages/Chat';
 
-const App = () => (
-  <ThemeProvider theme={Theme.dark}>
-    <Chat />
-  </ThemeProvider>
-);
+export default function App() {
 
-export default App;
+  const deviceTheme = useColorScheme();
+  console.log(deviceTheme);
+  const theme = Themes[deviceTheme] || theme.dark;
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Chat />
+    </ThemeProvider>
+  );
+
+}
+
