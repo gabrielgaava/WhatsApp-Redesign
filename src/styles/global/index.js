@@ -5,13 +5,15 @@ export const Wrapper = styled.SafeAreaView`
   height: 100%;
 `;
 
+export const Page = styled.ScrollView``;
+
 export const Header = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom-color: ${props => props.theme.lightBackground};
+  border-bottom-color: ${(props) => props.theme.lightBackground};
   border-bottom-width: 2px;
 `;
 

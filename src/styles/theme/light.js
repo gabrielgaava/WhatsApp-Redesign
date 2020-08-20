@@ -1,6 +1,7 @@
 export default {
   background: '#FFF',
   lightBackground: '#EFEFEF',
+  whiteText: '#FFF',
   primaryText: '#131313',
   secundaryText: '#313131',
   spanText: '#B1B1B1',
