@@ -19,7 +19,10 @@ export default function ChatCard({data}) {
   return (
     <Touchable
       onPress={() => {
-        navigation.navigate('ChatRoom', {conversation: {user: data.user.name}});
+        navigation.navigate('ChatRoom', {
+          name: data.user.name,
+          picture: data.user.picture,
+        });
       }}>
       <Container>
         <Avatar
