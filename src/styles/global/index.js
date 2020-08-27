@@ -13,6 +13,7 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background: ${(props) => props.theme.background};
   border-bottom-color: ${(props) => props.theme.lightBackground};
   border-bottom-width: 2px;
 `;

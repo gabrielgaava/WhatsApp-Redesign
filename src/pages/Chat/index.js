@@ -90,8 +90,7 @@ export default function Chat() {
       user: {
         online: false,
         name: 'Jarder',
-        picture:
-          'https://imaginesd.com.br/imgs/jarder.jpg',
+        picture: 'https://imaginesd.com.br/imgs/jarder.jpg',
       },
       message: 'O endócrino mediu minha altura, ainda tenho 1,89 😱',
     },
@@ -109,26 +108,28 @@ export default function Chat() {
 
   return (
     <Wrapper>
-      <Page>
-        <Header>
-          <PageName>Chat</PageName>
-          <Icon name="new-group" size={35} color="#5CE27F" />
-        </Header>
-        <StatusContainer>
-          <FlatList
-            horizontal
-            data={fakeStatus}
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={(item) => item.id}
-            renderItem={({item, index}) => <Status data={item} />}
-          />
-        </StatusContainer>
-        <FlatList
-          data={fakeConversation}
-          keyExtractor={(item) => item.id}
-          renderItem={({item, index}) => <ChatCard data={item} />}
-        />
-      </Page>
+      <FlatList
+        ListHeaderComponent={() => (
+          <>
+            <Header>
+              <PageName>Chat</PageName>
+              <Icon name="new-group" size={35} color="#5CE27F" />
+            </Header>
+            <StatusContainer>
+              <FlatList
+                horizontal
+                data={fakeStatus}
+                showsHorizontalScrollIndicator={false}
+                keyExtractor={(item) => item.id}
+                renderItem={({item, index}) => <Status data={item} />}
+              />
+            </StatusContainer>
+          </>
+        )}
+        data={fakeConversation}
+        keyExtractor={(item) => item.id}
+        renderItem={({item, index}) => <ChatCard data={item} />}
+      />
     </Wrapper>
   );
 }
