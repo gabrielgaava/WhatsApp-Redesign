@@ -1,10 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {Wrapper, Page, PageName, Header} from '../../styles/global';
 
 export default function Settings(){
   return (
-    <View>
-      <Text>Settings</Text>
-    </View>
+    <Wrapper>
+      <Header>
+        <PageName>Gabriel Gava</PageName>
+      </Header>
+    </Wrapper>
   );
 }

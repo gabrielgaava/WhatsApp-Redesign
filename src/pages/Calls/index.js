@@ -16,8 +16,7 @@ import {
 // Componentes
 import Icon from '../../styles/icons';
 
-function Call(data) {
-  const theme = useContext(ThemeContext);
+function Call(data, theme) {
   return (
     <Container>
       <Avatar
@@ -74,6 +73,7 @@ export default function Calls() {
       icon: 'video-camera',
     },
   ];
+  const theme = useContext(ThemeContext);
 
   return (
     <Wrapper>
@@ -85,7 +85,7 @@ export default function Calls() {
             <Icon name="plus" size={20} color="#5CE27F" />
           </Header>
         )}
-        renderItem={({item}) => Call(item)}
+        renderItem={({item}) => Call(item, theme)}
       />
     </Wrapper>
   );
