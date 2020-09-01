@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ThemeProvider} from 'styled-components';
 // import {useColorScheme} from 'react-native';
-import {NavigationContainer, StackActions} from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   createStackNavigator,
@@ -20,7 +20,7 @@ import Settings from '../Settings';
 
 export default function Root() {
   //const deviceTheme = useColorScheme();
-  const activeTheme = Themes.dark;
+  const [activeTheme, setActiveTheme] = useState(Themes.dark);
   const BottomTab = createBottomTabNavigator();
   const ThemeContext = React.createContext('light');
 

@@ -8,6 +8,8 @@ import {
   SettingsRow,
   SettingsName,
   Description,
+  From,
+  Facebook,
 } from './styles';
 
 import Avatar from '../../components/Avatar';
@@ -67,6 +69,8 @@ export default function Settings() {
             <Description>FAQ, talk with us, policy</Description>
           </Column>
         </SettingsRow>
+        <From>from</From>
+        <Facebook>FACEBOOK</Facebook>
       </Page>
     </Wrapper>
   );

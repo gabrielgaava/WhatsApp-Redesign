@@ -39,3 +39,18 @@ export const Description = styled.Text`
   color: ${(props) => props.theme.spanText};
   font-size: 15px;
 `;
+
+export const From = styled.Text`
+  font-family: 'SF-Pro-Display-Regular';
+  color: ${(props) => props.theme.spanText};
+  font-size: 15px;
+  text-align: center;
+  margin-top: 40px;
+`;
+
+export const Facebook = styled.Text`
+  font-family: 'SF-Pro-Display-Bold';
+  color: ${(props) => props.theme.primaryText};
+  font-size: 20px;
+  text-align: center;
+`;
