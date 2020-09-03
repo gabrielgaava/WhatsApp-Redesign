@@ -47,14 +47,14 @@ export const ChatContainer = styled.View`
 export const MessageLine = styled.View`
   flex-direction: row;
   padding: 10px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 `;
 
 export const Message = styled.View`
   width: auto;
   max-width: 320px;
   background: ${(props) =>
-    props.sent ? props.theme.primary : props.theme.lightBackground};
+    props.sent ? props.theme.blackPrimary : props.theme.lightBackground};
   padding: 15px 30px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

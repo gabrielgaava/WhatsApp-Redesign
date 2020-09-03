@@ -30,40 +30,40 @@ export default function Settings() {
             <PageName>Gabriel Gava</PageName>
             <Status>Your settings</Status>
           </Column>
-          <Icon name="phone" size={20} color={theme.secundaryText} />
+          <Icon name="qrcode" size={20} color={theme.secundaryText} />
         </Row>
       </Header>
       <Page>
         <SettingsRow>
-          <Icon name="key" size={30} color={theme.primaryText} />
+          <Icon name="user" size={30} color={theme.spanText} />
           <Column>
             <SettingsName>Your Account</SettingsName>
             <Description>Privacy, security, change password</Description>
           </Column>
         </SettingsRow>
         <SettingsRow>
-          <Icon name="chat1" size={30} color={theme.primaryText} />
+          <Icon name="conversation" size={30} color={theme.spanText} />
           <Column>
             <SettingsName>Conversations</SettingsName>
             <Description>Theme, wallpapers, history</Description>
           </Column>
         </SettingsRow>
         <SettingsRow>
-          <Icon name="notification" size={30} color={theme.primaryText} />
+          <Icon name="notification" size={30} color={theme.spanText} />
           <Column>
             <SettingsName>Notifications</SettingsName>
             <Description>Messages, ringtones and calls</Description>
           </Column>
         </SettingsRow>
         <SettingsRow>
-          <Icon name="notification" size={30} color={theme.primaryText} />
+          <Icon name="pie-chart" size={30} color={theme.spanText} />
           <Column>
             <SettingsName>Data usage and storage</SettingsName>
             <Description>Network usage, automatic downloads</Description>
           </Column>
         </SettingsRow>
         <SettingsRow>
-          <Icon name="notification" size={30} color={theme.primaryText} />
+          <Icon name="help" size={30} color={theme.spanText} />
           <Column>
             <SettingsName>Help</SettingsName>
             <Description>FAQ, talk with us, policy</Description>
