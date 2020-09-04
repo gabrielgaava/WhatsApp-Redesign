@@ -55,7 +55,7 @@ export const Message = styled.View`
   max-width: 320px;
   background: ${(props) =>
     props.sent ? props.theme.blackPrimary : props.theme.lightBackground};
-  padding: 15px 30px;
+  padding: 15px 12px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: ${(props) => (props.sent ? '10px' : '0px')};
@@ -72,11 +72,11 @@ export const MessageText = styled.Text`
 
 export const MessageTime = styled.Text`
   font-family: 'SF-Pro-Display-Regular';
-  color: ${(props) => props.theme.whiteText};
+  color: ${(props) => props.theme.secundaryText};
   font-size: 13px;
   position: absolute;
-  right: 20px;
-  bottom: 15px;
+  right: 2px;
+  bottom: 2px;
 `;
 
 // Footer
