@@ -8,8 +8,8 @@ export default function Status({params}) {
       <Bar />
       <Text>Página de Status</Text>
       <Image />
-      <UserName>Foto</UserName>
-      <Text>Input</Text>
+      <UserName>UserName Here</UserName>
+      <Text>Legenda aqui ... </Text>
     </View>
   );
 }
