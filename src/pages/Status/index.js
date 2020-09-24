@@ -9,7 +9,7 @@ export default function Status({params}) {
       <Text>Página de Status</Text>
       <Image />
       <UserName>UserName Here</UserName>
-      <Text>Legenda aqui ... </Text>
+      <Text>Legenda aqui .... </Text>yar
     </View>
   );
 }
